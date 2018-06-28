@@ -1,0 +1,279 @@
+$corPrincipal: #5DBCD2;
+$tamanhoWidthPrincipal: 100px;
+
+
+.view-inicial {
+
+    // FOOTER E PANEL LEFT
+        .footerGlobal {
+            background-color: $corPrincipal;
+            
+            p {
+                height: 48px;
+                width: 100%;
+                margin-bottom: 0;
+
+                button {
+                    height: 48px;
+                    background-color: $corPrincipal !important;
+                }
+            }
+        }
+        .panel-left  {
+            .perfilUsuPanelLeft {
+
+                text-align: center;
+
+                .dadosUsu {
+                    margin-top: 20px;
+
+                    .nome {
+                        font-weight: bold;
+                    }
+                    .membro {
+                        font-weight: 900;
+                        font-size: 9px;
+                    }
+                }
+            }
+            .menus {
+                .item-content {
+                    .item-inner {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    //-----------
+    // PAGES ----
+        .page1 {
+
+            .cards {
+                margin: 0;
+
+                .card {
+                    margin-bottom: 15px;
+                    
+                    .imagem {
+                        border-radius: 15px;
+                        height: 100px;
+                        padding: 0;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        opacity: 0.7;
+                        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+                        .textoImagem {
+                            text-shadow: white 0.1em 0.1em 0.2em;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            color: black;
+                            font-weight: 900;
+                            padding: 10px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .page2 {
+            #mapCadastro {
+                height: 100%;
+            }
+            #floating-panel {
+                background-color: white;
+                border-radius: 15px;
+                position: absolute;
+                top: 115px;
+                left: 50%;
+                margin-left: -180px;
+                width: 350px;
+                z-index: 5;
+                padding: 5px;
+                box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5);
+
+                .list {
+                    margin: 0;
+                    
+                    .item-title {
+                        text-align: -webkit-center;
+                    }
+                    input {
+                        text-align: -webkit-center;
+                    }
+                }
+            }
+            #latlng {
+                width: 225px;
+            }
+        }
+        .page3 {
+            #btnPopUpInstrucoes {
+                color: white;
+                z-index: 2;
+                position: fixed;
+                bottom: 70px;
+                background-color: red;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                min-width: 0;
+                left: 20px;
+                box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5);
+
+                i {
+                    position: relative;
+                    top: 7px;
+                }
+            }
+            #mapRota {
+                height: 100%;
+            }
+            .filtros {
+                margin: 5px;
+                border-radius: 15px;
+            }
+        }
+        .page4 {
+
+            .tituloListaConsultaHistorico {
+                color: $corPrincipal;
+                font-weight: bold;
+                margin-top: 15px;
+                padding: 20px;
+                border-bottom: 1px solid $corPrincipal;
+                padding-bottom: 10px;
+                z-index: 2;
+                top: 35px;
+                background-color: white;
+                position: fixed;
+                width: 100%;
+
+                .row {
+                    justify-content: end;
+                }
+            }
+            .qtdTotalViagens {
+                position: fixed;
+                bottom: 69px;
+                z-index: 3;
+                right: 15px;
+                font-weight: bold;
+                font-size: 15px;
+
+                span {
+                    color: $corPrincipal;
+                    font-weight: 900;
+                }
+            }
+            .paginationConsultaHistorico {
+                width: 100%;
+                position: fixed;
+                text-align: -webkit-center;
+                bottom: 47px;
+                background-color: white;
+                padding: 15px 0 15px 15px;
+                box-shadow: 0 -1px 9px rgba(0, 0, 0, 0.5);
+                z-index: 2;
+            }
+            .listaHistoricoCompleta {
+                padding-bottom: 50px;
+                margin-top: 50px;
+            }
+        }
+    //-----------
+    
+}
+
+
+// HEADER ---
+    .headerPage1 {
+        background-color: white !important;
+
+        .right{
+            padding-right: 20px;
+        }
+        .left {
+            padding-left: 15px;
+
+            i {
+                color: black;
+            }
+        }
+    }
+    .headerPage2 {
+        background-color: white !important;
+
+        .title {
+            color: $corPrincipal;
+            font-size: 16px;
+            padding-left: 20px;
+        }
+        .left {
+            padding-left: 15px;
+
+            i {
+                color: black;
+            }
+        }
+        .right {
+            color: black;
+            padding-right: 15px;
+        }
+    }
+    .headerPage3 {
+        background-color: white !important;
+
+        .title {
+            color: $corPrincipal;
+            font-size: 16px;
+            padding-left: 20px;
+        }
+        .left {
+            padding-left: 15px;
+
+            i {
+                color: black;
+            }
+        }
+        .right {
+            color: red;
+            padding-right: 15px;
+        }
+    }
+    .headerPage4 {
+        background-color: white !important;
+
+        .title {
+            color: $corPrincipal;
+            font-size: 16px;
+            padding-left: 20px;
+        }
+        .left {
+            padding-left: 15px;
+
+            i {
+                color: black;
+            }
+        }
+    }
+//-----------
+// NOTIFICACAO
+    .notificacaoSnack {
+
+        button {
+            padding: 3px !important;
+            background-color: white !important;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    }
+//-----------
+
+
+// Escreve tudo de CSS aqui, para transformar em css execute o CMD na pasta de CSS do projeto
+// sass nomeSeuScss.scss nomeArquivoParaGerar.css --> COMANDO
+// ele vai criar um css com o nome que você setou com as propriedades digitadas no scss passado como primeiro parametro
+// OBS: use e abuse dos comentários

@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="cordova.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="public">
+
+    <title> MODELO </title>
+
+    <link rel="stylesheet" href="css/framework7.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="application/javascript" src="js/jquery.form.min.js"></script> 
+    <script type="application/javascript" src="js/jquery.mask.min.js"></script> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxypuILBOpypSoQGf_AQzVJ4ZKOxtb86o"></script>
+
+   <!-- Material Design -->
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="css/material.indigo-pink.min.css">
+    <script defer src="js/material.min.js"></script>
+
+   <!-- Snack Bar -->
+    <script src="js/snackbar.js"></script>
+    <link rel="stylesheet" href="css/snackbar.css">
+
+   <!-- Pagination -->
+    <script type="application/javascript" src="js/pagination.js"></script>
+    <link rel="stylesheet" href="css/pagination.css">
+
+    <script src="jsapp/util.js"></script>
+    <script src="jsapp/bd.js"></script>
+    <script src="jsapp/index.js"></script>
+
+  </head>
+
+  <body class="framework7-root" cz-shortcut-listen="true">
+
+    <div id="app" class="tabs">
+      <div class="statusbar"></div>
+
+        <!-- Iniciei VIEW -->
+        <div class="view view-inicial tab tab-active" id="view-inicial">
+
+         <!-- Footer GLOBAL _________________________________________________________________________________________ -->
+          <div class="toolbar toolbar-bottom-md footerGlobal" id="footerGlobal">
+            <div class="toolbar-inner">
+              <p class="row">
+                <button class="col button button-raised button-fill" onclick="adicionaTela(mainView, 'page1')"><i class="fa fa-home" aria-hidden="true"></i></button>
+              </p>
+            </div>
+          </div>
+         <!--________________________________________________________________________________________________________ -->
+         <!-- Panel Left ____________________________________________________________________________________________ -->
+          <div class="panel panel-left panel-cover">
+            <div class="page">
+              <div class="page-content">
+                <div class="block perfilUsuPanelLeft">
+                  <div class="imgUsu"><img width="100" src="images/logo.jpg" class="lazy lazy-fadeIn"></div>
+                  <div class="dadosUsu">
+                    <div class="nome">Alexssander Leal</div>
+                    <div class="membro">DESENVOLVEDOR</div>
+                  </div>
+                </div>
+                <div class="block-title">Menu</div>
+                <div class="list menus">
+                  <ul>
+                    <li>
+                      <a href="#" class="item-link item-content panel-close" onclick="pegaLocAtual('cadastro')">
+                        <div class="item-media"><i class="fa fa-plus" aria-hidden="true" style="color: #1ed21e;"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Cadastro de Cidades</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="item-link item-content panel-close" onclick="pegaLocAtual('rota')">
+                        <div class="item-media"><i class="fa fa-map-marker" aria-hidden="true" style="color: red;"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Iniciar Rota</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="item-link item-content panel-close" onclick="paginacaoHistoricoRotas()">
+                        <div class="item-media"><i class="fa fa-history" aria-hidden="true" style="color: #5DBCD2;"></i></div>
+                        <div class="item-inner">
+                          <div class="item-title">Historico de Rotas</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!--________________________________________________________________________________________________________ -->
+         <!-- Inicio PAGE MAIN ______________________________________________________________________________________ -->
+          <div class="page page1" data-name="page1">
+
+              <div class="navbar headerPage1">
+                <div class="navbar-inner">
+                  <div class="left panel-open" data-panel="left">
+                    <a class="panel-open" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="right"><img src="images/logo.jpg" width="60" /></div>
+                </div>
+              </div>
+
+              <div class="page-content hide-toolbar-on-scroll" id="page1">
+                <div class="block cards">
+                      
+                  <a class="card demo-card-header-pic" onclick="pegaLocAtual('cadastro')">
+                    <div style="background-image:url(images/addend.jpg)" class="card-header align-items-flex-end imagem">
+                      <div class="textoImagem"> Cadastrar Novo Endereço </div>
+                    </div>
+                  </a>
+                  <a class="card demo-card-header-pic" onclick="pegaLocAtual('rota')">
+                    <div style="background-image:url(images/rota.jpg)" class="card-header align-items-flex-end imagem">
+                      <div class="textoImagem"> Iniciar Nova Rota</div>
+                    </div>
+                  </a>
+                  <a class="card demo-card-header-pic" onclick="paginacaoHistoricoRotas()">
+                    <div style="background-image:url(images/hist.jpg)" class="card-header align-items-flex-end imagem">
+                      <div class="textoImagem"> Historico de Rotas </div>
+                    </div>
+                  </a>
+                  
+                </div>
+              </div>
+
+          </div>
+         <!--________________________________________________________________________________________________________ -->
+         <!-- Inicio PAGE Cadastro de endereco ______________________________________________________________________ -->
+          <div class="page page2 stacked" data-name="page2">
+            <div class="navbar headerPage2">
+              <div class="navbar-inner">
+                <div class="left panel-open" data-panel="left">
+                  <a class="panel-open" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                </div>
+                <div class="title sliding">Cadastro de Endereço</div>
+                <div class="right" onclick="salvaEndereco()"><i class="fa fa-floppy-o" aria-hidden="true"></i></div>
+              </div>
+            </div>
+
+            <div class="page-content hide-toolbar-on-scroll" id="page2">
+              <div id="floating-panel">
+                <div class="list no-hairlines-md">
+                  <ul>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Nome ou coordenada</div>
+                        <div class="item-input-wrap">
+                          <input id="inputCadastro" type="text" placeholder="Ex. Passos">
+                          <span class="input-clear-button"></span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <a id="submitCadastro" class="button">Buscar</a>
+              </div>
+              <div id="mapCadastro"></div>
+            </div>
+          </div>
+         <!--________________________________________________________________________________________________________ -->
+         <!-- Inicio PAGE Rota ______________________________________________________________________________________ -->
+          <div class="page page3 stacked" data-name="page3">
+
+            <div class="navbar headerPage3">
+              <div class="navbar-inner">
+                <div class="left panel-open" data-panel="left">
+                  <a class="panel-open" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                </div>
+                <div class="title sliding">Rota</div>
+                <div class="right" onclick="calculateAndDisplayRoute()"><i class="fa fa-lg fa-map-marker" aria-hidden="true"></i></div>
+              </div>
+            </div>
+            <a class="button" id="btnPopUpInstrucoes" style="display: none;">
+              <i class="fa fa-lg fa-info" aria-hidden="true" onclick="myApp.popup.open('#popUpInstrucoesRota');"></i>
+            </a>
+
+            <div class="page-content" id="page3">
+
+              <div class="list" style="margin: 5px; box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5);">
+                <ul>
+                  <li class="accordion-item" id="accordionFiltroRota"><a href="#" class="item-content item-link">
+                      <div class="item-inner">
+                        <div class="item-media"><img src="images/gg.gif" width="15"/></div>
+                        <div class="item-title">Defina Sua Rota Aqui</div>
+                      </div></a>
+                    <div class="accordion-item-content">
+                      <div class="block">
+                        <div class="list filtros">
+                          <ul>
+                            <li>
+                              <a class="item-link smart-select smart-select-init" data-open-in="popup"  data-searchbar="true" data-searchbar-placeholder="Partida">
+                                <select name="partida" id="selectPartida">
+          
+                                </select>
+                                <div class="item-content">
+                                  <div class="item-inner">
+                                    <div class="item-media"><i class="fa fa-share" aria-hidden="true"></i></div>
+                                    <div class="item-title">Partida</div>
+                                  </div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="item-link smart-select smart-select-init" data-open-in="popup"  data-searchbar="true" data-searchbar-placeholder="Destino">
+                                <select name="destino" id="selectDestino">
+          
+                                </select>
+                                <div class="item-content">
+                                  <div class="item-inner">
+                                    <div class="item-media"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                    <div class="item-title">Destino</div>
+                                  </div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="item-link smart-select smart-select-init" data-open-in="sheet"  data-searchbar="true" data-searchbar-placeholder="Transporte">
+                                <select name="transporte" id="selectTransporte">
+                                  <option value="DRIVING"> Carro </option>
+                                  <option value="WALKING"> Caminhada </option>
+                                  <option value="BICYCLING"> Bicicleta</option>
+                                  <!-- <option value="TRANSIT"> Transporte Público </option> -->
+                                </select>
+                                <div class="item-content">
+                                  <div class="item-inner">
+                                    <div class="item-media"><i class="fa fa-car" aria-hidden="true"></i></div>
+                                    <div class="item-title">Transporte</div>
+                                  </div>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div id="mapRota"></div>
+
+              <!-- POP UP COM INSTRUÇÕES DE VIAGEM -->
+              <div class="popup popup-about" id="popUpInstrucoesRota">
+                <div class="view">
+                  <div class="page">
+
+                    <div class="navbar">
+                      <div class="navbar-inner">
+                        <div class="title">Instruções para viagem</div>
+                        <div class="right">
+                          <a class="link popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="page-content">
+                      <div id="right-panel" style="padding: 10px;"></div>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+         <!--________________________________________________________________________________________________________ -->
+         <!-- Inicio PAGE Historico _________________________________________________________________________________ -->
+          <div class="page page4 stacked" data-name="page4">
+
+            <div class="navbar headerPage4">
+              <div class="navbar-inner">
+                <div class="left panel-open" data-panel="left">
+                  <a class="panel-open" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                </div>
+                <div class="title sliding">Histórico de Rotas</div>
+              </div>
+            </div>
+            <div class="tituloListaConsultaHistorico">
+              <div class="row">
+                <div class="col-40"> Origem </div>
+                <div class="col-40"> Destino </div>
+                <div class="col-20" style="text-align: right;"> Data </div>
+              </div>
+            </div>
+            <div class="qtdTotalViagens">
+              <div> <span id="qtdTotalViagens"> </span> Viagens </div>
+            </div>
+
+            <div class="page-content" id="page4">
+
+                <div id="paginationConsultaHistorico" class="paginationConsultaHistorico"></div> <!-- BTNS de paginação -->
+                <div class="list"> <!-- Lista de Historicos -->
+                  <div id="listaHistoricoCompleta" class="listaHistoricoCompleta">   
+                    
+                  </div>
+                </div>
+
+                <!-- Por Over -->
+                <div class="popover popover-links popOverNovaRotaHistorico" id="popOverNovaRotaHistorico">
+                    <div class="popover-inner">
+                      <div class="list">
+                        <ul>
+                          <li>
+                            <a href="#" class="item-content item-link" id="btnPageNovaRotaHistorico">
+                              <div class="item-media"><i style="color: red;" class="fa fa-lg fa-map-marker" aria-hidden="true"></i></div>
+                              <div class="item-inner">
+                                <div class="item-title">
+                                  Realizar mesma rota
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+          </div>
+         <!--________________________________________________________________________________________________________ -->
+
+        </div>
+
+     </div>
+    
+    <script type="text/javascript" src="js/framework7.js"></script>
+
+  </body>
+
+</html> 
+
+

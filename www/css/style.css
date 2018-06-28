@@ -1,0 +1,175 @@
+.view-inicial .footerGlobal {
+  background-color: #5DBCD2; }
+  .view-inicial .footerGlobal p {
+    height: 48px;
+    width: 100%;
+    margin-bottom: 0; }
+    .view-inicial .footerGlobal p button {
+      height: 48px;
+      background-color: #5DBCD2 !important; }
+.view-inicial .panel-left .perfilUsuPanelLeft {
+  text-align: center; }
+  .view-inicial .panel-left .perfilUsuPanelLeft .dadosUsu {
+    margin-top: 20px; }
+    .view-inicial .panel-left .perfilUsuPanelLeft .dadosUsu .nome {
+      font-weight: bold; }
+    .view-inicial .panel-left .perfilUsuPanelLeft .dadosUsu .membro {
+      font-weight: 900;
+      font-size: 9px; }
+.view-inicial .panel-left .menus .item-content .item-inner {
+  margin-left: 0; }
+.view-inicial .page1 .cards {
+  margin: 0; }
+  .view-inicial .page1 .cards .card {
+    margin-bottom: 15px; }
+    .view-inicial .page1 .cards .card .imagem {
+      border-radius: 15px;
+      height: 100px;
+      padding: 0;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      opacity: 0.7;
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+      .view-inicial .page1 .cards .card .imagem .textoImagem {
+        text-shadow: white 0.1em 0.1em 0.2em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: black;
+        font-weight: 900;
+        padding: 10px;
+        width: 100%; }
+.view-inicial .page2 #mapCadastro {
+  height: 100%; }
+.view-inicial .page2 #floating-panel {
+  background-color: white;
+  border-radius: 15px;
+  position: absolute;
+  top: 115px;
+  left: 50%;
+  margin-left: -180px;
+  width: 350px;
+  z-index: 5;
+  padding: 5px;
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
+  .view-inicial .page2 #floating-panel .list {
+    margin: 0; }
+    .view-inicial .page2 #floating-panel .list .item-title {
+      text-align: -webkit-center; }
+    .view-inicial .page2 #floating-panel .list input {
+      text-align: -webkit-center; }
+.view-inicial .page2 #latlng {
+  width: 225px; }
+.view-inicial .page3 #btnPopUpInstrucoes {
+  color: white;
+  z-index: 2;
+  position: fixed;
+  bottom: 70px;
+  background-color: red;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  min-width: 0;
+  left: 20px;
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5); }
+  .view-inicial .page3 #btnPopUpInstrucoes i {
+    position: relative;
+    top: 7px; }
+.view-inicial .page3 #mapRota {
+  height: 100%; }
+.view-inicial .page3 .filtros {
+  margin: 5px;
+  border-radius: 15px; }
+.view-inicial .page4 .tituloListaConsultaHistorico {
+  color: #5DBCD2;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 20px;
+  border-bottom: 1px solid #5DBCD2;
+  padding-bottom: 10px;
+  z-index: 2;
+  top: 35px;
+  background-color: white;
+  position: fixed;
+  width: 100%; }
+  .view-inicial .page4 .tituloListaConsultaHistorico .row {
+    justify-content: end; }
+.view-inicial .page4 .qtdTotalViagens {
+  position: fixed;
+  bottom: 69px;
+  z-index: 3;
+  right: 15px;
+  font-weight: bold;
+  font-size: 15px; }
+  .view-inicial .page4 .qtdTotalViagens span {
+    color: #5DBCD2;
+    font-weight: 900; }
+.view-inicial .page4 .paginationConsultaHistorico {
+  width: 100%;
+  position: fixed;
+  text-align: -webkit-center;
+  bottom: 47px;
+  background-color: white;
+  padding: 15px 0 15px 15px;
+  box-shadow: 0 -1px 9px rgba(0, 0, 0, 0.5);
+  z-index: 2; }
+.view-inicial .page4 .listaHistoricoCompleta {
+  padding-bottom: 50px;
+  margin-top: 50px; }
+
+.headerPage1 {
+  background-color: white !important; }
+  .headerPage1 .right {
+    padding-right: 20px; }
+  .headerPage1 .left {
+    padding-left: 15px; }
+    .headerPage1 .left i {
+      color: black; }
+
+.headerPage2 {
+  background-color: white !important; }
+  .headerPage2 .title {
+    color: #5DBCD2;
+    font-size: 16px;
+    padding-left: 20px; }
+  .headerPage2 .left {
+    padding-left: 15px; }
+    .headerPage2 .left i {
+      color: black; }
+  .headerPage2 .right {
+    color: black;
+    padding-right: 15px; }
+
+.headerPage3 {
+  background-color: white !important; }
+  .headerPage3 .title {
+    color: #5DBCD2;
+    font-size: 16px;
+    padding-left: 20px; }
+  .headerPage3 .left {
+    padding-left: 15px; }
+    .headerPage3 .left i {
+      color: black; }
+  .headerPage3 .right {
+    color: red;
+    padding-right: 15px; }
+
+.headerPage4 {
+  background-color: white !important; }
+  .headerPage4 .title {
+    color: #5DBCD2;
+    font-size: 16px;
+    padding-left: 20px; }
+  .headerPage4 .left {
+    padding-left: 15px; }
+    .headerPage4 .left i {
+      color: black; }
+
+.notificacaoSnack button {
+  padding: 3px !important;
+  background-color: white !important;
+  border-radius: 5px;
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
