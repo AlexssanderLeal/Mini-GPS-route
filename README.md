@@ -12,7 +12,7 @@ A seguir passo a passo
 5 - Vá ate a aba de credenciais e crie a sua <br>
 6 - Após esses passos a google ira lhe fornecer um KEY de permissão de uso que será vinculada ao seu codigo HTML 
 exatamente aonde está 'SUA_KEY_AQUI' no head do projeto 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=SUA_KEY_AQUI"></script><br>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=SUA_KEY_AQUI"></script><br><br><br>
 
 Após esses passos, o projeto estará pronto para ser utilizado e explorado<br><br>
 Muito obrigado e Let's go TO CODE \o '
