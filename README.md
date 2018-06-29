@@ -10,7 +10,7 @@ A seguir passo a passo
 3 - Selecione seu projeto no menu esquerdo acima. <br>
 4 - Ative a API de Geolocalização JavaScript pela biblioteca de Api's e serviços localizada no panel left <br>
 5 - Vá ate a aba de credenciais e crie a sua <br>
-6 - Após esses passos a google ira lhe fornecer um KEY de permissão de uso que será vinculado ao seu codigo HTML 
+6 - Após esses passos a google ira lhe fornecer um KEY de permissão de uso que será vinculada ao seu codigo HTML 
 exatamente aonde está 'SUA_KEY_AQUI' no head do projeto 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=SUA_KEY_AQUI"></script><br>
 
