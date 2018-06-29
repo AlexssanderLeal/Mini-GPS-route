@@ -7,7 +7,7 @@ A seguir passo a passo
 
 1 - Cria sua conta da Google para utilizar as suas API's: https://console.cloud.google.com/apis/library <br>
 2 - Crie seu primeiro projeto. <br>
-3 - Selecione seu projeto no menu acima esquerdo. <br>
+3 - Selecione seu projeto no menu esquerdo acima. <br>
 4 - Ative a API de Geolocalização JavaScript pela biblioteca de Api's e serviços localizada no panel left <br>
 5 - Vá ate a aba de credenciais e crie a sua <br>
 6 - Após esses passos a google ira lhe fornecer um KEY de permissão de uso que será vinculado ao seu codigo HTML 
