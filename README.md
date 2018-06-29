@@ -5,14 +5,14 @@ Galera, para as Api's do Google de geolocalização funcionar perfeitamente, é 
 
 A seguir passo a passo 
 
-1 - Cria sua conta da google no link: https://console.cloud.google.com/home?project=agely-notifications&folder&organizationId
-2 - Crie seu primeiro projeto. 
-3 - Selecione seu projeto no menu acima esquerdo.
-4 - Ative a API de Geolocalização JavaScript pela biblioteca de Api's e serviços localizada no panel left
-5 - Vá ate a aba de credenciais e crie a sua 
+1 - Cria sua conta da Google para utilizar as suas API's: https://console.cloud.google.com/apis/library <br>
+2 - Crie seu primeiro projeto. <br>
+3 - Selecione seu projeto no menu acima esquerdo. <br>
+4 - Ative a API de Geolocalização JavaScript pela biblioteca de Api's e serviços localizada no panel left <br>
+5 - Vá ate a aba de credenciais e crie a sua <br>
 6 - Após esses passos a google ira lhe fornecer um KEY de permissão de uso que será vinculado ao seu codigo HTML 
-exatamente aonde está 'SUA_KEY_AQUI' no <head> do projeto 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=SUA_KEY_AQUI"></script>
+exatamente aonde está 'SUA_KEY_AQUI' no head do projeto 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=SUA_KEY_AQUI"></script><br>
 
-Após esses passos, o projeto está pronto para ser utilizado e explorado
+Após esses passos, o projeto estará pronto para ser utilizado e explorado<br><br>
 Muito obrigado e Let's go TO CODE \o '
